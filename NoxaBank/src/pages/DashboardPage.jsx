@@ -558,6 +558,7 @@ export default function DashboardPage() {
 
               <section className="db-table">
                 <h3>Transaction History</h3>
+                <div className="db-table-scroll">
                 <table>
                   <thead>
                     <tr>
@@ -586,6 +587,7 @@ export default function DashboardPage() {
                     )}
                   </tbody>
                 </table>
+                </div>
               </section>
             </>
           )}
@@ -593,6 +595,7 @@ export default function DashboardPage() {
           {activeTab === "overview" && (
             <section className="db-table">
               <h3>Balance Overview</h3>
+              <div className="db-table-scroll">
               <table>
                 <thead>
                   <tr>
@@ -615,6 +618,7 @@ export default function DashboardPage() {
                   </tr>
                 </tbody>
               </table>
+              </div>
             </section>
           )}
 

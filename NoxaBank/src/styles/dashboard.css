@@ -203,6 +203,12 @@
   margin: 0 0 12px 0;
 }
 
+.db-table-scroll {
+  overflow-x: auto;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
 .db-table table {
   width: 100%;
   border-collapse: collapse;

@@ -107,6 +107,7 @@ const tableWrap = {
   border: "1px solid rgba(255,255,255,0.12)",
   background: "rgba(255,255,255,0.04)",
   overflow: "auto",
+  maxHeight: "60vh",
 };
 
 const table = {
@@ -121,6 +122,10 @@ const th = {
   fontWeight: 900,
   borderBottom: "1px solid rgba(255,255,255,0.12)",
   opacity: 0.95,
+  position: "sticky",
+  top: 0,
+  background: "#1a1a2e",
+  zIndex: 1,
 };
 
 const td = {

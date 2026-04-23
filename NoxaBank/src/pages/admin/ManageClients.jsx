@@ -163,10 +163,10 @@ export default function ManageClients() {
   );
 }
 
-const th = { textAlign: "left", padding: "12px 12px", fontSize: 14, opacity: 0.9, whiteSpace: "nowrap" };
+const th = { textAlign: "left", padding: "12px 12px", fontSize: 14, opacity: 0.9, whiteSpace: "nowrap", position: "sticky", top: 0, background: "#1a1a2e", zIndex: 1 };
 const td = { padding: "12px 12px", fontSize: 14, opacity: 0.95, whiteSpace: "nowrap" };
 
-const tableBox = { overflow: "auto", borderRadius: 16, border: "1px solid rgba(255,255,255,0.12)" };
+const tableBox = { overflow: "auto", borderRadius: 16, border: "1px solid rgba(255,255,255,0.12)", maxHeight: "60vh" };
 
 const input = {
   padding: "10px 12px",
