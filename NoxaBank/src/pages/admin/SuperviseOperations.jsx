@@ -7,9 +7,8 @@ la date, l’expéditeur, le destinataire et le montant.
 
 
 import React, { useEffect, useMemo, useState } from "react";
+import API_BASE from "../../config";
 
-const API_BASE =
-  import.meta?.env?.VITE_API_BASE?.replace(/\/$/, "") || "http://localhost:5200/api";
 
 export default function SuperviseOperations() {
   const [search, setSearch] = useState("");

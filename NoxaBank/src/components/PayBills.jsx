@@ -12,7 +12,7 @@ const PayBills = () => {
   const [balances, setBalances] = useState({});
   const [activeTab, setActiveTab] = useState("pay"); // "pay" ou "history"
 
-  const API_BASE = "http://localhost:5200/api";
+  import API_BASE from "../config";
 
   const providers = [
     "Bell",

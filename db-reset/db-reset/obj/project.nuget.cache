@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "zhu4R/uPziE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Laoua\\Downloads\\noxabank-main (5)\\noxabank-main\\db-reset\\db-reset\\db-reset.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Laoua\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0\\microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\Laoua\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.0\\microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\Laoua\\.nuget\\packages\\npgsql\\10.0.2\\npgsql.10.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

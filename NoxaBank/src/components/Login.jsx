@@ -15,8 +15,9 @@ Il affiche aussi des messages (succès, erreur) pour informer l’utilisateur.
 import "../styles/login.css";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import API_BASE from "../config";
 
-const API = "http://localhost:5200/api/auth";
+const API = `${API_BASE}/auth`;
 
 export default function Login() {
   const navigate = useNavigate();

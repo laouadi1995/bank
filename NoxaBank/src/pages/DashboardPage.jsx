@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 import "../styles/dashboard.css";
 import PayBills from "../components/PayBills";
 
-const API_BASE = "http://localhost:5200/api";
+import API_BASE from "../config";
 
 export default function DashboardPage() {
   const navigate = useNavigate();

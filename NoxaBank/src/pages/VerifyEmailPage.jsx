@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/verify-email.css";
+import API_BASE from "../config";
 
 export default function VerifyEmailPage() {
   const navigate = useNavigate();
@@ -16,8 +17,6 @@ export default function VerifyEmailPage() {
     const savedTimer = sessionStorage.getItem("resendTimer");
     return savedTimer ? parseInt(savedTimer) : 0;
   });
-
-  const API_BASE = "http://localhost:5200/api";
 
   // Décroître le timer chaque seconde
   useEffect(() => {

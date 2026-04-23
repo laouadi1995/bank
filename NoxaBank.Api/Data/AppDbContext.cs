@@ -31,12 +31,10 @@ public class AppDbContext : DbContext
 
         modelBuilder.Entity<User>()
             .HasIndex(u => u.Phone)
-            .IsUnique()
-            .HasFilter("[Phone] IS NOT NULL");
+            .IsUnique();
 
         modelBuilder.Entity<User>()
             .HasIndex(u => u.PassportNumber)
-            .IsUnique()
-            .HasFilter("[PassportNumber] IS NOT NULL");
+            .IsUnique();
     }
 }

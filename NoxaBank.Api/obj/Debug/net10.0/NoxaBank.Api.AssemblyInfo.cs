@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NoxaBank.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d8f2d73e16f3d677eb6441e28de83aea6d73a47")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a077c61e735317bee1b7568d2a7db5b1d058230a")]
 [assembly: System.Reflection.AssemblyProductAttribute("NoxaBank.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NoxaBank.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

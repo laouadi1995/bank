@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/verify-login-otp.css';
+import API_BASE from '../config';
 
 const VerifyLoginOtpPage = () => {
   const navigate = useNavigate();
@@ -63,7 +64,7 @@ const VerifyLoginOtpPage = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5200/api/auth/verify-login-otp', {
+      const response = await fetch(`${API_BASE}/auth/verify-login-otp`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -108,7 +109,7 @@ const VerifyLoginOtpPage = () => {
     setSuccess('');
 
     try {
-      const response = await fetch('http://localhost:5200/api/auth/resend-login-otp', {
+      const response = await fetch(`${API_BASE}/auth/resend-login-otp`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -7,9 +7,8 @@ It also verifies the available balance before sending the transfer request to th
 
 
 import { useMemo, useState } from "react";
+import API_BASE from "../../config";
 
-const API_BASE =
-  import.meta?.env?.VITE_API_BASE?.replace(/\/$/, "") || "http://localhost:5200/api";
 
 const API = `${API_BASE}/admin/accounts`;
 

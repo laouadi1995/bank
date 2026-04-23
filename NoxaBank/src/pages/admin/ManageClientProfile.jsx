@@ -8,8 +8,9 @@ both the current profile routes and fallback routes for compatibility with older
 
 import { useState } from "react";
 
-const API_PROFILE = "http://localhost:5200/api/admin/profile"; // ✅ route logique
-const API_FALLBACK = "http://localhost:5200/api/admin";        // ✅ fallback (si ton ancien code l'utilise)
+import API_BASE from "../../config";
+const API_PROFILE = `${API_BASE}/admin/profile`;
+const API_FALLBACK = `${API_BASE}/admin`;
 
 export default function ManageClientProfile() {
   const token = localStorage.getItem("token");

@@ -9,9 +9,7 @@ dates, and cheque image before sending the operation to the API.
 
 
 import React, { useMemo, useState } from "react";
-
-const API_BASE =
-  import.meta?.env?.VITE_API_BASE?.replace(/\/$/, "") || "http://localhost:5200/api";
+import API_BASE from "../../config";
 
 export default function GlobalAccess() {
   const [passport, setPassport] = useState("");

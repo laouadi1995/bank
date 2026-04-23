@@ -7,7 +7,8 @@ Les informations des clients sont affichées dans un tableau.
 
 import { useEffect, useState } from "react";
 
-const API_ADMIN = "http://localhost:5200/api/admin";
+import API_BASE from "../../config";
+const API_ADMIN = `${API_BASE}/admin`;
 
 export default function ManageClients() {
   const token = localStorage.getItem("token");
