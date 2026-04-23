@@ -1,0 +1,266 @@
+/* =========================================
+   IMPORTANT: CANCEL login.css body rules
+   ONLY WHEN dashboard is displayed
+========================================= */
+.db {
+  /* take full screen */
+  width: 100vw;
+  min-height: 100vh;
+
+  /* cancel body centering effect */
+  display: block;
+}
+
+/* This wrapper must be FULL width and height */
+.db-main-wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  gap: 18px;
+
+  padding: 18px;
+}
+
+/* SIDEBAR */
+.sb {
+  width: 280px;
+  min-width: 280px;
+  min-height: calc(100vh - 36px);
+
+  background: linear-gradient(180deg, #6d3fd1, #3a1c8a);
+  color: #fff;
+
+  border-radius: 18px;
+  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sb-brand {
+  margin-bottom: 18px;
+}
+
+.sb-title {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.sb-sub {
+  opacity: 0.85;
+  margin-top: 6px;
+}
+
+.sb-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  flex: 1;
+}
+
+.sb-item {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.sb-item:hover {
+  background: rgba(255, 255, 255, 0.20);
+}
+
+.sb-item.active {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.sb-bottom {
+  margin-top: 10px;
+}
+
+.sb-logout {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-weight: 700;
+}
+
+.sb-logout:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* MAIN CONTENT */
+.db-main {
+  flex: 1;
+  min-height: calc(100vh - 36px);
+  width: 100%;
+
+  background: linear-gradient(180deg, #5b2bbd, #32107a);
+  color: #fff;
+
+  border-radius: 18px;
+  padding: 22px;
+
+  overflow: auto; /* scroll inside */
+}
+
+/* TOPBAR */
+.tb {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.tb-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 10px 12px;
+  border-radius: 14px;
+  flex: 1;
+  max-width: 520px;
+}
+
+.tb-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+}
+
+.tb-search input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.tb-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 10px 12px;
+  border-radius: 14px;
+}
+
+.tb-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.tb-name {
+  font-weight: 800;
+}
+
+.tb-role {
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+/* CARDS */
+.db-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 18px;
+  border-radius: 18px;
+}
+
+.card-title {
+  opacity: 0.85;
+  margin-bottom: 8px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* TABLE */
+.db-table {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.db-table h3 {
+  margin: 0 0 12px 0;
+}
+
+.db-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.db-table th,
+.db-table td {
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.db-table th {
+  opacity: 0.85;
+}
+
+.db-table tr:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .db-main-wrapper {
+    flex-direction: column;
+  }
+
+  .sb {
+    width: 100%;
+    min-width: 100%;
+    min-height: auto;
+  }
+
+  .sb-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .db-main {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .sb-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .tb {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tb-search {
+    max-width: 100%;
+  }
+
+  .tb-user {
+    width: 100%;
+    justify-content: center;
+  }
+}
